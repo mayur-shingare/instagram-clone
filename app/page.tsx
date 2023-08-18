@@ -9,7 +9,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { useCallback, useEffect, useState } from "react";
 import { Navbar } from "./components/navbar";
 import { CLOUDFRONT_URL } from "./constants/constants";
-import { Hub, Logger } from 'aws-amplify';
+import { Hub } from 'aws-amplify';
 
 const IMAGE_URL = CLOUDFRONT_URL;
 export default function Home() {
