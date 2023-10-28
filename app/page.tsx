@@ -120,6 +120,11 @@ export default function Home() {
     Hub.listen('auth', listener);
   }, []);
 
+  useEffect(()=>{
+    fetchImages();
+    Hub.listen('auth', listener);
+  })
+
   return (
     <main>
       <Authenticator>
